@@ -107,3 +107,62 @@ footer {
     }
 }
     
+/* Slideri */
+/* Slider Container */
+#slider {
+    position: relative;
+    max-width: 600px;
+    margin: 32px auto;
+    overflow: hidden; /* Prevent white background visibility */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Slide Wrapper */
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
+}
+
+/* Each Slide */
+.slide {
+    min-width: 100%; /* Ensure each slide takes the full width of the container */
+    text-align: center;
+    background: #fff; /* Set a consistent background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-width: 100%; /* Ensure images scale correctly */
+    height: auto;
+    object-fit: cover; /* Ensure images maintain aspect ratio */
+}
+
+/* Navigation Buttons */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: #333;
+}
