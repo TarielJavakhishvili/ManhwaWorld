@@ -108,7 +108,6 @@ footer {
 }
     
 /* Slideri */
-/* Slider Container */
 #slider {
     position: relative;
     max-width: 600px;
@@ -118,13 +117,11 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Slide Wrapper */
 .slide-container {
     display: flex;
     transition: transform 0.5s ease-in-out; /* Smooth sliding effect */
 }
 
-/* Each Slide */
 .slide {
     min-width: 100%; /* Ensure each slide takes the full width of the container */
     text-align: center;
@@ -141,7 +138,6 @@ footer {
     object-fit: cover; /* Ensure images maintain aspect ratio */
 }
 
-/* Navigation Buttons */
 button.prev, button.next {
     position: absolute;
     top: 50%;
